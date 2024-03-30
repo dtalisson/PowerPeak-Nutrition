@@ -50,8 +50,7 @@ body  {
 
 header { 
     padding: 30px 4%;
-    background-color: #000000;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.404);
+    background-color: #bf3d2a;
 }
 
 ul {
@@ -68,7 +67,7 @@ li a {
 }
 
 li a:hover { 
-    color:#bf3d2a
+    color:#000000
 }
 
 .principal {
@@ -199,7 +198,7 @@ li a:hover {
 }
 .inf-card p { 
     color: black;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1rem;
 }
 .inf-card span { 
@@ -217,3 +216,41 @@ li a:hover {
     margin: 7.5rem 1rem;
     cursor: pointer;
 }
+
+.inf-add i:hover { 
+    background-color: #531a11;
+    transition: all .5s;
+
+}
+.cards .price { 
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 1200px) { 
+
+} /*
+media query extra-large
+*/
+
+@media screen and (max-width: 1024px) { 
+
+}
+/*
+media query small-large
+*/
+
+@media screen and (max-width: 768px) { 
+
+}
+/*
+media query small
+*/
+
+@media screen and (max-width: 480px) { 
+
+}
+/*
+media query low-large
+*/
