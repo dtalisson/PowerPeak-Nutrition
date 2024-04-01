@@ -1,3 +1,12 @@
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
 
 /* 
 cores: 
@@ -61,19 +70,30 @@ body  {
 
 }
 #menu { 
-    position: absolute;
-    width: 100%;
-    top: 70px;
-    right: 0px;
-    background: #e7e7e7;
     display: block;
+    position: absolute;
+    width: 35%;
+    top: 80px;
+    right: 0;
+    background: #bf3d2a;
+    height: 0px;
+    transition: .6s;
+    z-index: 1000;
+    visibility: hidden;
+    overflow-y: hidden;
+    
 }
 #menu a { 
     display: flex;
-    padding: .5rem;
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid black;
+
 }
 #nav.active #menu { 
- display: flex;
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
 }
 button { 
     background-color: transparent;
@@ -84,8 +104,89 @@ button {
 #btn-mobile { 
     display: block;
     cursor: pointer;
+    margin: 0rem 1rem;
+}
+#menu h1 { 
+    font-size: 1.5rem;
+    margin: auto;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 2rem 0rem;
+    font-weight: bold;    
+}
+#menu hr { 
+    height: 1px;
+    width: 300px;
+    margin: auto;
+}
+.box-menu { 
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    margin: 1rem auto;
+    background-color: #531a11;
+}
+.box-menu .box-img { 
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+}
+.box-menu .box-img img { 
+    width: 150px;
+}
+.box-menu .box-inf { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    margin: 0rem 1rem;
+    width: 30%;
+}
+.box-menu .box-inf span { 
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+}
+.box-menu .qtd { 
+    display: flex;
+    width: 15%;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.box-menu .inputNumber { 
+    width: 60px;
+    height: 20px;
+    color: black;
+    font-weight: bold;
+    text-align: end;
+    padding: .6rem;
+}
+.box-menu .remove { 
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    margin: 1rem 2rem ;
+}
+.box-menu .remove i { 
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.box-menu .remove i:hover { 
+    color: #bf3d2a;
+    transition: .6s;
 }
 
+
+
+
+/* HEADER A CIMA */
 .principal {
     background-image:linear-gradient(to top, #bf3d2a , #222222 10%);
     width: 100%;
