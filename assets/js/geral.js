@@ -11,7 +11,7 @@ function ready(){
 }
     const qtdInputs = document.getElementsByClassName("inputNumber")
     for (let i = 0; i < qtdInputs.length; i++) {
-        qtdInputs[i].addEventListener("change",updateTotal)     
+        qtdInputs[i].addEventListener("change",chefNumberNull)     
     }
     const addCart = document.getElementsByClassName("buttonAdd")
     for (let i = 0; i < addCart.length; i++) {
@@ -19,12 +19,28 @@ function ready(){
     }
 }
 
+function chefNumberNull(event) { 
+    if(event.target.value === "0" ) { 
+        event.target.parentElement.parentElement.remove()
+    }
+
+    updateTotal()
+}
 function addProduct(event) { 
     const button = event.target
     const produtoInfo = button.parentElement.parentElement.parentElement
     const produtoImage = produtoInfo.getElementsByClassName("productImage")[0].src
     const produtoNome =  produtoInfo.getElementsByClassName("nomeProduto")[0].innerText
     const produtoPrice = produtoInfo.getElementsByClassName("precoProduto")[0].innerText
+
+    const productTitle = document.getElementsByClassName("nomeItem")
+    for (let i = 0; i < productTitle.length; i++) {
+        if(productTitle[i].innerText === produtoNome) { 
+            productTitle[i].parentElement.parentElement.getElementsByClassName("inputNumber")[0].value++
+            return
+        }
+        
+    }
 
     let newCartProduto = document.createElement("div")
     newCartProduto.classList.add("box-menu")
@@ -49,6 +65,8 @@ function addProduct(event) {
     const tBody = document.querySelector(".quadrado")
     tBody.append(newCartProduto)
     updateTotal()
+    newCartProduto.getElementsByClassName("inputNumber")[0].addEventListener("change", chefNumberNull)
+    newCartProduto.getElementsByClassName("buttonRemove")[0].addEventListener("click",removeProduto)
 }
 
 function removeProduto(event) { 
