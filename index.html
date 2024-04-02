@@ -10,6 +10,7 @@
         <link rel="stylesheet"
         href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <script src="assets/js/script.js" defer></script>
+    <script async src="assets/js/geral.js" defer></script>
 </head>
 <body>
    <header id="header">
@@ -19,40 +20,46 @@
         <ul id="menu">
             <h1>Carrinho de compras </h1>
             <hr>
-        <div class="box-menu">
-            <div class="box-img">
-                <img src="assets/img/suplemento.png" alt="">
+        <div class="quadrado">
+            <div class="box-menu">
+                <div class="box-img">
+                    <img src="assets/img/suplemento.png" alt="">
+                </div>
+                <div class="box-inf">
+                    <span class="nomeItem">POWER PEAK WHEY</span>
+                    <span class="precoItem">R$149,99</span>
+                </div>
+                <div class="qtd">
+                    <label for="inputNumber">QTD</label>
+                    <input type="number" class="inputNumber" value="2" min="0">
+                </div>
+                <div class="remove">
+                    <button type="button" class="buttonRemove"><i class='bx bxs-coffee-togo'></i></button>  
+                </div>
             </div>
-            <div class="box-inf">
-                <span class="nomeItem">POWER PEAK WHEY</span>
-                <span class="precoItem">R$150</span>
+            <!-- BOX 1  -->
+            <div class="box-menu">
+                <div class="box-img">
+                    <img src="assets/img/suplemento.png" alt="">
+                </div>
+                <div class="box-inf">
+                    <span class="nomeItem">POWER PEAK WHEY</span>
+                    <span class="precoItem">R$119,99</span>
+                </div>
+                <div class="qtd">
+                    <label for="inputNumber">QTD</label>
+                    <input type="number" class="inputNumber" value="1" min="0">
+                </div>
+                <div class="remove">
+                    <button type="button" class="buttonRemove"><i class='bx bxs-coffee-togo'></i></button>  
+                </div>
             </div>
-            <div class="qtd">
-                <label for="inputNumber">QTD</label>
-                <input type="number" class="inputNumber" value="1" min="0">
-            </div>
-            <div class="remove">
-                <button type="button" class="buttonRemove"><i class='bx bxs-coffee-togo'></i></button>  
-            </div>
+            <!-- BOX 2  -->
         </div>
-        <!-- BOX 1  -->
-        <div class="box-menu">
-            <div class="box-img">
-                <img src="assets/img/suplemento.png" alt="">
-            </div>
-            <div class="box-inf">
-                <span class="nomeItem">POWER PEAK WHEY</span>
-                <span class="precoItem">R$150</span>
-            </div>
-            <div class="qtd">
-                <label for="inputNumber">QTD</label>
-                <input type="number" class="inputNumber" value="1" min="0">
-            </div>
-            <div class="remove">
-                <button type="button" class="buttonRemove"><i class='bx bxs-coffee-togo'></i></button>  
-            </div>
+        <hr>
+        <div class="resultado">
+            <p>Total: <span class="totalPriceProduct"></span></p>
         </div>
-        <!-- BOX 2  -->
         </ul>
             </nav>
    </header> 
@@ -91,10 +98,10 @@
                         
                         <div class="cards">
                                     <div class="card-img">
-                                        <img src="assets/img/suplemento.png" alt="">
+                                        <img src="assets/img/suplemento.png" alt="" class="productImage">
                                     </div>
                                         <div class="inf-card">
-                                            <p>POWER PEAK WHEY</p>
+                                            <p class="nomeProduto">POWER PEAK WHEY</p>
                                             <p>
                                                 <i class='bx bxs-star'></i>
                                                 <i class='bx bxs-star'></i>
@@ -102,19 +109,22 @@
                                                 <i class='bx bxs-star'></i>
                                                 <span>(36)</span>
                                             </p>
-                                            <p class="price">R$150</p>  
+                                            <p class="precoProduto">R$119,99</p>  
                                         </div>
                                             <div class="inf-add">
-                                                <i class='bx bx-trash-alt' ></i>
+                                                <button type="button" class="buttonAdd">
+                                                     <i class='bx bx-trash-alt' ></i>
+                                                </button>
+                                               
                                             </div>
                         </div>
                                 <!-- CARD 1 -->
                         <div class="cards">
                                     <div class="card-img">
-                                        <img src="assets/img/suplemento.png" alt="">
+                                        <img src="assets/img/suplemento.png" alt="" class="productImage">
                                     </div>
                                         <div class="inf-card">
-                                            <p>POWER PEAK WHEY</p>
+                                            <p class="nomeProduto">POWER PEAK CREATINA</p>
                                             <p>
                                                 <i class='bx bxs-star'></i>
                                                 <i class='bx bxs-star'></i>
@@ -122,93 +132,14 @@
                                                 <i class='bx bxs-star'></i>
                                                 <span>(36)</span>
                                             </p>
-                                            <p class="price">R$150</p>  
+                                            <p class="precoProduto">R$121,99</p>  
                                         </div>
-                                            <div class="inf-add">
-                                                <i class='bx bx-trash-alt' ></i>
-                                            </div>
+                                        <div class="inf-add">
+                                            <button type="button" class="buttonAdd">
+                                                 <i class='bx bx-trash-alt' ></i>
+                                            </button>
                         </div>
                                 <!-- CARD 2  -->
-                        <div class="cards">
-                                    <div class="card-img">
-                                        <img src="assets/img/suplemento.png" alt="">
-                                    </div>
-                                        <div class="inf-card">
-                                            <p>POWER PEAK WHEY</p>
-                                            <p>
-                                                <i class='bx bxs-star'></i>
-                                                <i class='bx bxs-star'></i>
-                                                <i class='bx bxs-star'></i>
-                                                <i class='bx bxs-star'></i>
-                                                <span>(36)</span>
-                                            </p>
-                                            <p class="price">R$150</p>  
-                                        </div>
-                                            <div class="inf-add">
-                                                <i class='bx bx-trash-alt' ></i>
-                                            </div>
-                        </div>
-                                <!-- CARD 3  -->
-                        <div class="cards">
-                                    <div class="card-img">
-                                        <img src="assets/img/suplemento.png" alt="">
-                                    </div>
-                                        <div class="inf-card">
-                                            <p>POWER PEAK WHEY</p>
-                                            <p>
-                                                <i class='bx bxs-star'></i>
-                                                <i class='bx bxs-star'></i>
-                                                <i class='bx bxs-star'></i>
-                                                <i class='bx bxs-star'></i>
-                                                <span>(36)</span>
-                                            </p>
-                                            <p class="price">R$150</p>  
-                                        </div>
-                                            <div class="inf-add">
-                                                <i class='bx bx-trash-alt' ></i>
-                                            </div>
-                        </div>
-                                <!-- CARD 4 -->
-                        <div class="cards">
-                                    <div class="card-img">
-                                        <img src="assets/img/suplemento.png" alt="">
-                                    </div>
-                                        <div class="inf-card">
-                                            <p>POWER PEAK WHEY</p>
-                                            <p>
-                                                <i class='bx bxs-star'></i>
-                                                <i class='bx bxs-star'></i>
-                                                <i class='bx bxs-star'></i>
-                                                <i class='bx bxs-star'></i>
-                                                <span>(36)</span>
-                                            </p>
-                                            <p class="price">R$150</p>  
-                                        </div>
-                                            <div class="inf-add">
-                                                <i class='bx bx-trash-alt' ></i>
-                                            </div>
-                        </div>
-                                <!-- CARD 5 -->
-                        <div class="cards">
-                                    <div class="card-img">
-                                        <img src="assets/img/suplemento.png" alt="">
-                                    </div>
-                                        <div class="inf-card">
-                                            <p>POWER PEAK WHEY</p>
-                                            <p>
-                                                <i class='bx bxs-star'></i>
-                                                <i class='bx bxs-star'></i>
-                                                <i class='bx bxs-star'></i>
-                                                <i class='bx bxs-star'></i>
-                                                <span>(36)</span>
-                                            </p>
-                                            <p class="price">R$150</p>  
-                                        </div>
-                                            <div class="inf-add">
-                                                <i class='bx bx-trash-alt' ></i>
-                                            </div>
-                        </div>
-                                <!-- CARD 6 -->
                     </div>    
                 </div>
             </div>
