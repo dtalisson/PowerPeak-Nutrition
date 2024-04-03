@@ -3,7 +3,7 @@ if(document.readyState === "loading") {
 } else { 
     ready()
 }
-
+let totalAmount = ""
 function ready(){
     const removeProduct = document.getElementsByClassName("buttonRemove")  // variavel do button remove
     for (var i = 0; i < removeProduct.length; i++) {
@@ -17,15 +17,35 @@ function ready(){
     for (let i = 0; i < addCart.length; i++) {
         addCart[i].addEventListener("click", addProduct)      
     }
+    const buttonSucesso = document.getElementsByClassName("buttonSucess")[0]
+    buttonSucesso.addEventListener("click", sucessItem)
 }
+// funções. 
+function sucessItem() { 
+    if(totalAmount === "0,00") { 
+         alert(`
+         Infelizmente seu carrinho de compras está vázio.
+         Verifique novamente.       
+         `) 
+         } else {
+            alert(`
+            Obrigado pela sua compra!
+            Valor do seu pedido: R$${totalAmount}
+            Nos contate no botão abaixo para confirmar seus itens.
+            
+            `) 
+            
+         }
+    }
+
 
 function chefNumberNull(event) { 
     if(event.target.value === "0" ) { 
         event.target.parentElement.parentElement.remove()
     }
-
     updateTotal()
 }
+// função de checar caso não tiver nenhuma quantidade > remover o item.
 function addProduct(event) { 
     const button = event.target
     const produtoInfo = button.parentElement.parentElement.parentElement
@@ -40,8 +60,7 @@ function addProduct(event) {
             return
         }
         
-    }
-
+    }    
     let newCartProduto = document.createElement("div")
     newCartProduto.classList.add("box-menu")
 
@@ -68,6 +87,7 @@ function addProduct(event) {
     newCartProduto.getElementsByClassName("inputNumber")[0].addEventListener("change", chefNumberNull)
     newCartProduto.getElementsByClassName("buttonRemove")[0].addEventListener("click",removeProduto)
 }
+// função de pegar os dados e adicionar o item no carrinho de compras.
 
 function removeProduto(event) { 
     event.target.parentElement.parentElement.parentElement.remove()
@@ -76,7 +96,7 @@ function removeProduto(event) {
 // FUNÇÃO DE PROCURAR O ITEM CLICADO E REMOVER.
 
 function updateTotal () {  
-    let totalAmount = 0 // 
+ totalAmount = 0 // 
     const cardProduct = document.getElementsByClassName("box-menu") // variavel do card do produto
 for (let i = 0; i < cardProduct.length; i++) {
     //   console.log(cardProduct[i])

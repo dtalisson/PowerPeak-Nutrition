@@ -59,6 +59,7 @@ fontes:
 body  { 
     background-color: #c1c1c0
 }
+
 #logo { 
     font-size: 1.5rem;
     font-weight: bold;
@@ -82,12 +83,11 @@ body  {
     height: 0px;
     transition: .6s;
     z-index: 1000;
-    /*
+
     visibility: hidden;
     overflow-y: hidden;
-    */
 }
-#menu a { 
+#menu > a { 
     display: flex;
     padding: 1rem 0;
     margin: 0 1rem;
@@ -197,33 +197,58 @@ button {
     font-size: 2rem;
     font-weight: bold;
 }
-.box-fim .sucess { 
-    width: 180px;
-    background-color: green;
-    padding: .9rem;
-    cursor: pointer;
-    text-align: center;
-}
-.box-fim .sucess button h1 { 
-    font-size: 1rem;
-    font-weight: bold;
-    color: white;
-}
-.sucess:hover { 
-    background-color: greenyellow;
-    transition: .8s;
-}
-.sucess h1 { 
-    font-size: 1.3rem;
-}
 .box-fim { 
     display: flex;
     flex-direction: column;
     align-items: end;
     justify-content: end;
     margin: 1rem 1rem;
+    gap: 10px;  
+}
+.sucess { 
+    display: flex;
+    flex-direction: column;
     gap: 10px;
 }
+.box-fim .sucess .buttonSucess { 
+    background-color: green;
+    width: 180px;
+    padding: .9rem;
+    cursor: pointer;
+    text-align: center;
+    gap: 10px;   
+}
+.box-fim .sucess .contactMe { 
+    background-color: #531a11;
+    width: 180px;
+    padding: .7rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.box-fim .sucess .contactMe a { 
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.box-fim .sucess button h1 { 
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+.sucess .buttonSucess:hover { 
+    background-color: greenyellow;
+    transition: .8s;
+}
+.box-fim .sucess .contactMe:hover { 
+    background: #ff2200;
+    transition: .8s;
+
+
+ }
 
 /* HEADER A CIMA */
 .principal {
@@ -334,11 +359,16 @@ button {
     margin: 1rem;
     display: flex;
 }
-.card-img { 
-    max-width: 40%;
+.cards .card-img { 
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem .8rem;
 }
+
 .card-img img { 
-    width: 180px;
+    width: 150px;
     margin: 0rem -2rem;
 }
 .inf-card { 
@@ -419,9 +449,8 @@ media query small-large
     .cards { 
         width: 400px;
     }
-    .inf-add i { 
-        
-    }
+
+
     .inf-card p { 
         font-size: 1.2rem;
     }
