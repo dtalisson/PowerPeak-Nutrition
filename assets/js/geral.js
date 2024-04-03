@@ -31,7 +31,7 @@ function sucessItem() {
             alert(`
             Obrigado pela sua compra!
             Valor do seu pedido: R$${totalAmount}
-            Nos contate no botão abaixo para confirmar seus itens.
+            Nos contate no botão abaixo para confirmar seu item.
             
             `) 
             

@@ -1,0 +1,129 @@
+@media screen and (max-width: 1024px) { 
+    #logo {
+        margin: 0rem 1rem; 
+        }
+    #menu { 
+            width: 55%;
+        }   
+    .informacoes-principal h1 {  
+        font-size: 1.5rem; 
+     }
+
+     .informacoes-principal > h2 {
+        font-size: 3rem;
+        }
+    .cards-inf { 
+        grid-template-columns: 2fr 2fr 2fr  ;
+        
+    }
+    .cards { 
+        width: 300px;
+    }
+    
+
+}
+@media screen and (max-width: 900px) { 
+    .cards-inf { 
+        grid-template-columns: 2fr 2fr   ;
+        
+    }
+    .cards { 
+        width: 350px;
+    }
+    #menu { 
+        width: 65%;
+    }    
+}
+
+@media screen and (max-width: 768px) { 
+    .flex { 
+        flex-direction: column;
+    }
+    .principal { 
+        margin: 0;
+    }
+    .informacoes-principal { 
+        width: 100%;
+    }
+    .informacoes-principal h1 { 
+        font-size: 2.5rem;
+    }
+    .informacoes-principal > h2 { 
+        font-size: 4rem;
+    }
+    .inf-adicionais { 
+        width: 80%;
+        margin: auto;
+    }
+    .inf-adicionais button { 
+        width: 300px;
+        gap: 10px;
+        padding: 1.5rem 2rem;
+        background-color: #bf3d2a;
+        border: none;
+    }
+    .bg-principal { 
+        width: 100%;
+    }
+    .bg-principal img { 
+        max-width: 100%;
+    }
+    #menu { 
+        width: 100%;
+    }  
+
+    .cards-inf { 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;          
+    }
+    .cards { 
+        width: 400px;
+    }
+    .inf-card p { 
+        font-size: 1.2rem;
+    }
+    .cards .price { 
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    
+}
+
+@media screen and (max-width: 425px) { 
+    .informacoes-principal h1 { 
+        font-size: 1.5rem;
+    }
+    .informacoes-principal > h2 { 
+        font-size: 3rem;
+    }
+    .inf-adicionais h2, .inf-adicionais p  { 
+        font-size: 1rem;
+    }
+    .inf-adicionais { 
+        width: 400px;
+        margin: 0;
+    }
+    .inf-adicionais button { 
+        width: 160px;
+        gap: 5px;
+        padding: 1rem 1.5rem;
+
+        background-color: #bf3d2a;
+        border: none;
+    }
+    .cards-inf { 
+        display: flex;      
+    }
+    .cards { 
+        width: 350px;
+    }
+    .box-menu { 
+        width: 400px;
+    }
+}
