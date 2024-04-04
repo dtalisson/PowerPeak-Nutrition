@@ -77,13 +77,14 @@ body  {
     position: absolute;
     width: 35%;
     top: 80px;
-    right: 0;
+    right: -100%;
     background: #bf3d2a;
     height: 0px;
     transition: .6s;
     z-index: 1000;
     visibility: hidden;
     overflow-y: hidden;
+    border-radius: 10px;
 }
 #menu > a { 
     display: flex;
@@ -96,6 +97,9 @@ body  {
     height: calc(100vh - 70px);
     visibility: visible;
     overflow-y: auto;
+    right: 10px;
+    transition: .6s;
+
 }
 button { 
     background-color: transparent;
@@ -127,6 +131,7 @@ button {
     flex-direction: row;
     margin: 1rem auto;
     background-color: #531a11;
+    border-radius: 20px;
 }
 .box-menu .box-img { 
     width: 25%;
@@ -294,31 +299,20 @@ button {
 .inf-adicionais button { 
     background:transparent;
     border: 1px solid white;
-    padding: 1rem 1rem;
-    width: 200px;
+    padding: 1rem 2rem;
+    width: 300px;
+    cursor: pointer;
+    margin: 2rem 0rem;
 }
 .inf-adicionais h2 { 
     color: white;
-    font-size: 1.3rem;
-}
-.inf-adicionais p { 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 2rem;
 }
 .inf-adicionais button:hover { 
     background-color: #bf3d2a;
     transition: all .5s;
-}
-.inf-adicionais i { 
-    font-size: 1.3rem;
-    
-}
 
+}
 .bg-principal img { 
     max-width: 100%;
 }

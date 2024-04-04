@@ -110,12 +110,14 @@
         margin: 0;
     }
     .inf-adicionais button { 
-        width: 160px;
+        width: 300px;
         gap: 5px;
-        padding: 1rem 1.5rem;
-
+        padding: 1rem 2rem;
         background-color: #bf3d2a;
         border: none;
+    }
+    .inf-adicionais button h2 { 
+        font-size: 1.5rem;
     }
     .cards-inf { 
         display: flex;      
