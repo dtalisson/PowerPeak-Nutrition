@@ -304,9 +304,9 @@ button {
     cursor: pointer;
     margin: 2rem 0rem;
 }
-.inf-adicionais h2 { 
-    color: white;
+.inf-adicionais button > a { 
     font-size: 2rem;
+    font-weight: bold;
 }
 .inf-adicionais button:hover { 
     background-color: #bf3d2a;
@@ -396,4 +396,3 @@ button {
     font-weight: bold;
     
 }
-
