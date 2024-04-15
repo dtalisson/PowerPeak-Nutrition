@@ -140,9 +140,13 @@
         width: 130px;
     }
     .inf-add i { 
-    font-size: 1.3rem;
-    padding: .7rem;
-    margin: 6rem 1rem;
+        font-size: 1.3rem;
+        padding: .7rem;
+        margin: 6rem 1rem;
+        
+    }
+    .inf-add { 
+        width: 20%;
     }
     
     

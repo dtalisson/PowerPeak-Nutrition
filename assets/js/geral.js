@@ -57,6 +57,7 @@ function addProduct(event) {
     for (let i = 0; i < productTitle.length; i++) {
         if(productTitle[i].innerText === produtoNome) { 
             productTitle[i].parentElement.parentElement.getElementsByClassName("inputNumber")[0].value++
+            updateTotal()
             return
         }
         
@@ -83,9 +84,9 @@ function addProduct(event) {
     `
     const tBody = document.querySelector(".quadrado")
     tBody.append(newCartProduto)
-    updateTotal()
     newCartProduto.getElementsByClassName("inputNumber")[0].addEventListener("change", chefNumberNull)
     newCartProduto.getElementsByClassName("buttonRemove")[0].addEventListener("click",removeProduto)
+    updateTotal()
 
     document.getElementById("nav").classList.add("active");
     document.getElementById("header").scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });}
@@ -104,7 +105,7 @@ function updateTotal () {
 for (let i = 0; i < cardProduct.length; i++) {
     //   console.log(cardProduct[i])
 
-    const precoProduto = cardProduct[i].getElementsByClassName("precoItem")[0].innerText.replace("R$","").replace(",",".")
+    const precoProduto = cardProduct[i].getElementsByClassName("precoItem")[0].textContent.replace("R$","").replace(",",".")
     //  console.log(precoProduto) 
     const qtdProduto = cardProduct[i].getElementsByClassName("inputNumber")[0].value
     // console.log(qtdProduto)
@@ -116,3 +117,4 @@ document.querySelector(".totalPriceProduct").innerText = "R$" + totalAmount
 }
 // função de pegar os dados do card [valor e a quantidade // e fazer a soma deles com o resultado.]
 updateTotal()
+
