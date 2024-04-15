@@ -19,6 +19,7 @@
     .cards { 
         width: 300px;
     }
+
     
 
 }
@@ -69,7 +70,7 @@
         max-width: 100%;
     }
     #menu { 
-        width: 100%;
+        width: 95%;
     }  
 
     .cards-inf { 
@@ -95,9 +96,9 @@
     
 }
 
-@media screen and (max-width: 425px) { 
-    .informacoes-principal h1 { 
-        font-size: 1.5rem;
+@media screen and (max-width: 435px) { 
+    .informacoes-principal  h1 { 
+        font-size: 1.8rem;
     }
     .informacoes-principal > h2 { 
         font-size: 3rem;
@@ -120,12 +121,29 @@
         font-size: 1.5rem;
     }
     .cards-inf { 
-        display: flex;      
+        width: 100%;
+        margin: 0rem 1rem;
     }
     .cards { 
         width: 350px;
     }
     .box-menu { 
-        width: 400px;
+        width: 350px;
     }
+    .box-menu .box-img img { 
+        width: 120px;
+    }
+    .box-menu .box-inf span { 
+        font-size: 1rem;
+    }
+    .card-img img { 
+        width: 130px;
+    }
+    .inf-add i { 
+    font-size: 1.3rem;
+    padding: .7rem;
+    margin: 6rem 1rem;
+    }
+    
+    
 }

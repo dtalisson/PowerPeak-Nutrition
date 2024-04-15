@@ -86,7 +86,10 @@ function addProduct(event) {
     updateTotal()
     newCartProduto.getElementsByClassName("inputNumber")[0].addEventListener("change", chefNumberNull)
     newCartProduto.getElementsByClassName("buttonRemove")[0].addEventListener("click",removeProduto)
-}
+
+    document.getElementById("nav").classList.add("active");
+    document.getElementById("header").scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });}
+
 // função de pegar os dados e adicionar o item no carrinho de compras.
 
 function removeProduto(event) { 
