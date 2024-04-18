@@ -33,17 +33,22 @@ branco / cinza / claro: #c1c1c0
 fontes: 
     font-family: "Kanit", sans-serif;
     font-family: "Oswald", sans-serif;
-    font-family: "Madimi One", sans-serif;  
-
+    font-family: "Madimi One", sans-serif;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-family: "Changa", sans-serif;
+    font-family: "Poppins", sans-serif;
 
 */
 
+  
 
 
 /* importações */
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Madimi+One&family=Oswald:wght@200..700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * { 
     margin: 0;
@@ -51,12 +56,12 @@ fontes:
     list-style: none;
     text-decoration: none;
     color: white;
-    font-family: "Kanit", sans-serif;
+    font-family: "Poppins",monospace;
     box-sizing: border-box;
 }
 
 body  { 
-    background-color: #c1c1c0
+    background-color: #E1E1E1
 }
 
 #logo { 
@@ -298,8 +303,7 @@ button {
     width: 400px;
 }
 .inf-adicionais button { 
-    background:transparent;
-    border: 1px solid white;
+    background-color: #bf3d2a;
     padding: 1rem 2rem;
     width: 300px;
     cursor: pointer;
@@ -310,8 +314,9 @@ button {
     font-weight: bold;
 }
 .inf-adicionais button:hover { 
-    background-color: #bf3d2a;
     transition: all .5s;
+    background-color: #ca2b12;
+
 
 }
 .bg-principal img { 
@@ -320,11 +325,11 @@ button {
 /* INFORMAÇÕES PRINCIPAIS */
 
 .products {
-    width: 90%;
+    width: 100%;
 }
 
 .products h1 {
-    margin: 2rem 0rem;
+    margin: 5rem 0rem;
     text-align: center;
     font-size: 2.5rem; 
     color: black;
@@ -397,3 +402,78 @@ button {
     font-weight: bold;
     
 }
+
+.about { 
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    height: 400px;
+    max-width: 1280px;
+    margin: 10rem 12rem;
+    
+}
+
+.about-powerpeak { 
+    width: 50%;
+    padding: 1rem 1rem;
+    
+}
+.about-powerpeak p { 
+    color: black;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: .9rem 0rem;
+    font-size: 1.5rem;
+}
+.about-powerpeak .since { 
+    font-weight: bold;
+    color: #bf3d2a;
+    font-size: 1.5rem;
+}
+.about-powerpeak h2 { 
+    color: black;
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.about-powerpeak h1 { 
+    color: black;
+    font-size: 7rem;
+}
+
+.about-conteudo { 
+    width: 50%;
+    padding: 1rem 0rem;
+}
+.about-conteudo p { 
+    color: #4e4e4e;
+    margin: .9rem 0rem;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 0rem 1rem;
+}
+.beneficios { 
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    
+}
+.beneficios li { 
+    color: black;
+    padding: 1rem 0rem;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: .8rem 0rem;
+    display: flex;
+    align-items: center;
+  }
+.beneficios li i { 
+    border-radius: 50%;
+    color: #bf3d2a;
+    background: white;
+    margin: 0rem .8rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: .2rem;
+    
+}
+
