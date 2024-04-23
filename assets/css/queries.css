@@ -19,10 +19,21 @@
     .cards { 
         width: 300px;
     }
+    .about { 
+        margin: 10rem 3rem;
+    }
+    .about-powerpeak { 
+        padding: 1rem 2rem;
+    }
+    .beneficios li { 
+        padding: 0.6rem 0rem;
+      }
 
     
 
 }
+/* MEDIA QUERY 1024PX */
+
 @media screen and (max-width: 900px) { 
     .cards-inf { 
         grid-template-columns: 2fr 2fr   ;
@@ -35,6 +46,7 @@
         width: 65%;
     }    
 }
+/* MEDIA QUERY 900PX */
 
 @media screen and (max-width: 768px) { 
     .flex { 
@@ -72,7 +84,6 @@
     #menu { 
         width: 95%;
     }  
-
     .cards-inf { 
         display: flex;
         flex-direction: column;
@@ -89,13 +100,42 @@
         font-size: 1.3rem;
         font-weight: bold;
     }
-    
+    .about { 
+        display: flex;
+        flex-direction: column;
+        margin: 10rem 0rem;
+    }
+    .about-powerpeak { 
+        width: 100%;
+        padding: 1rem 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;       
+    }
+    .about-conteudo { 
+        width: 100%;
+        padding: 1rem 0rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+    }
+    .about-conteudo p { 
+        color: #4e4e4e;
+        margin: .9rem 3rem;
+        font-weight: 500;
+        font-size: 1.2rem;
+        padding: 0rem 1rem;
+    }
 }
 
 @media screen and (max-width: 600px) {
-    
+        .about-powerpeak h2 { 
+        text-align: center;
 }
-
+}
+/* MEDIA QUERY 600PX */
 @media screen and (max-width: 435px) { 
     .informacoes-principal  h1 { 
         font-size: 1.8rem;
@@ -142,12 +182,28 @@
     .inf-add i { 
         font-size: 1.3rem;
         padding: .7rem;
-        margin: 6rem 1rem;
-        
+        margin: 6rem 1rem; 
     }
     .inf-add { 
         width: 20%;
     }
+    .about-conteudo p { 
+        font-size: 1.1rem;
+        padding: 0rem 0rem;
+    }
+    .beneficios { 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin: 1rem 0rem;
+    }
+    .beneficios li { 
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 1rem 2rem;
+      }
     
     
 }
