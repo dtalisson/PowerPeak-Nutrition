@@ -261,7 +261,7 @@ button {
 
 /* HEADER A CIMA */
 .principal {
-    background-image:linear-gradient(to top, #bf3d2a , #222222 10%);
+    background-color: #222222;
     width: 100%;
 }
 
@@ -475,5 +475,26 @@ button {
     font-weight: bold;
     padding: .2rem;
     
+}
+
+.bases-bg { 
+    display: flex;
+
+}
+.bases-esquerdo { 
+                width: 50%;
+                height: 600px;
+                background-color: #bf3d2a;
+}
+.bases-direito { 
+                background-color: #151515f1;
+                width: 50%;
+                height: 600px;
+                background-image: url(/assets/img/bg-base.jpg);
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+                background-blend-mode: overlay ;
+
 }
 
