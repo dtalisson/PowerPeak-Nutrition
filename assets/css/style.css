@@ -4,6 +4,12 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
 .flex { 
     display: flex;
 }
@@ -410,7 +416,7 @@ button {
     margin: auto;
     height: 400px;
     max-width: 1280px;
-    margin: 10rem 12rem;
+    margin: 12rem auto;
     
 }
 
@@ -478,24 +484,76 @@ button {
     
 }
 
+.bases { 
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 5rem 0;
+}
 .bases-bg { 
     display: flex;
+    }
 
-}
 .bases-esquerdo { 
-                width: 50%;
-                height: 600px;
-                background-color: #bf3d2a;
+                    width: 50%;
+                    background-color: #bf3d2a;
+                    padding: 3rem 5rem;
+                    font-weight: bold;
 }
+.bases-esquerdo p { 
+                    color: rgb(219, 219, 219);
+                    font-weight:300;
+                    font-size:1.1rem;
+     
+}
+.bases-esquerdo h3 { 
+                    font-size: 2rem;
+                    font-weight: bold;
+}
+.beneficios-bases { 
+                    margin: 1.5rem 0rem;
+}
+
 .bases-direito { 
                 background-color: #151515f1;
                 width: 50%;
-                height: 600px;
+                padding: 8rem 5rem;
                 background-image: url(/assets/img/bg-base.jpg);
                 background-repeat: no-repeat;
                 background-position: center center;
                 background-size: cover;
                 background-blend-mode: overlay ;
+}
+.bases-direito h1 { 
+                    font-size: 4rem;
+}
+.bases-direito p { 
+                    font-size: 1.1rem;
+                    font-weight: 300;
+                    color: rgb(219, 219, 219);
+}
+.bases-direito button { 
+    background-color: transparent;
+    padding: 1rem 2rem;
+    width: 300px;
+    cursor: pointer;
+    margin: 2rem 0rem;
+    color: #bf3d2a;
+    border: 3px solid rgb(255, 255, 255);
+}
+.bases-direito button:hover { 
+    background: #ca2b12;
+    transition: all .3s;
 
 }
+
+
+.bases-direito button a { 
+    font-weight: bold;
+
+}
+.bases-esquerdo h3, .bases-esquerdo p, .bases-direito h1, .bases-direito p { 
+    font-family: "Oswald", sans-serif;
+}
+
+
 

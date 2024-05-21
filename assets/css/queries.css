@@ -24,6 +24,7 @@
     }
     .about-powerpeak { 
         padding: 1rem 2rem;
+        margin: 0rem 0rem;
     }
     .beneficios li { 
         padding: 0.6rem 0rem;
@@ -112,6 +113,9 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;       
+    }
+    .about-powerpeak h2 { 
+        text-align: center;
     }
     .about-conteudo { 
         width: 100%;
