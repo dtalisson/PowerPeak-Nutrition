@@ -365,133 +365,131 @@ button {
 }
 
 .card-img img { 
-    width: 150px;
-    margin: 0rem -2rem;
+            width: 150px;
+            margin: 0rem -2rem;
 }
 .inf-card { 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-start;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: flex-start;
 }
 .inf-card i { 
-    color: green;
-    font-size: 1rem;
+            color: green;
+            font-size: 1rem;
 }
 .inf-card p { 
-    color: black;
-    font-weight: bold;
-    font-size: 1rem;
+            color: black;
+            font-weight: bold;
+            font-size: 1rem;
 }
 .inf-card span { 
-    color: #2222228b;
+                    color: #2222228b;
 }
 .inf-add { 
-    width: 100px;
+                    width: 100px;
 }
 .inf-add i { 
-    color: white;
-    background-color: #bf3d2a;
-    border-radius: 50%;
-    font-size: 1rem;
-    padding: .6rem;
-    margin: 7.5rem 1rem;
-    cursor: pointer;
+                    color: white;
+                    background-color: #bf3d2a;
+                    border-radius: 50%;
+                    font-size: 1rem;
+                    padding: .6rem;
+                    margin: 7.5rem 1rem;
+                    cursor: pointer;
 }
 
 .inf-add i:hover { 
-    background-color: #531a11;
-    transition: all .5s;
+                    background-color: #531a11;
+                    transition: all .5s;
 
 }
 .cards .precoProduto { 
-    font-size: 1.2rem;
-    font-weight: bold;
-    
+                    font-size: 1.2rem;
+                    font-weight: bold;
 }
 
 .about { 
-    display: flex;
-    flex-direction: row;
-    margin: auto;
-    height: 400px;
-    max-width: 1280px;
-    margin: 12rem auto;
-    
+                    display: flex;
+                    flex-direction: row;
+                    margin: auto;
+                    height: 400px;
+                    max-width: 1280px;
+                    margin: 12rem auto;
 }
 
 .about-powerpeak { 
-    width: 50%;
-    padding: 1rem 1rem;
-    
+                    width: 50%;
+                    padding: 1rem 1rem;  
 }
 .about-powerpeak p { 
-    color: black;
-    text-transform: uppercase;
-    font-weight: 500;
-    margin: .9rem 0rem;
-    font-size: 1.5rem;
+                    color: black;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    margin: .9rem 0rem;
+                    font-size: 1.5rem;
 }
 .about-powerpeak .since { 
-    font-weight: bold;
-    color: #bf3d2a;
-    font-size: 1.5rem;
+                    font-weight: bold;
+                    color: #bf3d2a;
+                    font-size: 1.5rem;
 }
 .about-powerpeak h2 { 
-    color: black;
-    font-size: 3.5rem;
-    font-weight: bold;
-    text-transform: uppercase;
+                    color: black;
+                    font-size: 3.5rem;
+                    font-weight: bold;
+                    text-transform: uppercase;
 }
 .about-powerpeak h1 { 
-    color: black;
-    font-size: 7rem;
+                    color: black;
+                    font-size: 7rem;
 }
 
 .about-conteudo { 
-    width: 50%;
-    padding: 1rem 0rem;
+                width: 50%;
+                padding: 1rem 0rem;
 }
 .about-conteudo p { 
-    color: #4e4e4e;
-    margin: .9rem 0rem;
-    font-weight: 500;
-    font-size: 1rem;
-    padding: 0rem 1rem;
+                color: #4e4e4e;
+                margin: .9rem 0rem;
+                font-weight: 500;
+                font-size: 1rem;
+                padding: 0rem 1rem;
 }
 .beneficios { 
-    display: grid;
-    grid-template-columns: 2fr 2fr;
+            display: grid;
+            grid-template-columns: 2fr 2fr;
     
 }
 .beneficios li { 
-    color: black;
-    padding: 1rem 0rem;
-    font-size: 1rem;
-    font-weight: 500;
-    margin: .8rem 0rem;
-    display: flex;
-    align-items: center;
+                color: black;
+                padding: 1rem 0rem;
+                font-size: 1rem;
+                font-weight: 500;
+                margin: .8rem 0rem;
+                display: flex;
+                align-items: center;
   }
 .beneficios li i { 
-    border-radius: 50%;
-    color: #bf3d2a;
-    background: white;
-    margin: 0rem .8rem;
-    font-size: 1.3rem;
-    font-weight: bold;
-    padding: .2rem;
+                border-radius: 50%;
+                color: #bf3d2a;
+                background: white;
+                margin: 0rem .8rem;
+                font-size: 1.3rem;
+                font-weight: bold;
+                padding: .2rem;
     
 }
 
 .bases { 
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 5rem 0;
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 2rem 0;
 }
 .bases-bg { 
-    display: flex;
-    }
+            display: flex;
+    
+}
 
 .bases-esquerdo { 
                     width: 50%;
@@ -532,27 +530,27 @@ button {
                     color: rgb(219, 219, 219);
 }
 .bases-direito button { 
-    background-color: transparent;
-    padding: 1rem 2rem;
-    width: 300px;
-    cursor: pointer;
-    margin: 2rem 0rem;
-    color: #bf3d2a;
-    border: 3px solid rgb(255, 255, 255);
+                        background-color: transparent;
+                        padding: 1rem 2rem;
+                        width: 300px;
+                        cursor: pointer;
+                        margin: 2rem 0rem;
+                        color: #bf3d2a;
+                        border: 3px solid rgb(255, 255, 255);
 }
 .bases-direito button:hover { 
-    background: #ca2b12;
-    transition: all .3s;
+                        background: #ca2b12;
+                        transition: all .3s;
 
 }
 
 
 .bases-direito button a { 
-    font-weight: bold;
+                        font-weight: bold;
 
 }
 .bases-esquerdo h3, .bases-esquerdo p, .bases-direito h1, .bases-direito p { 
-    font-family: "Oswald", sans-serif;
+                        font-family: "Oswald", sans-serif;
 }
 
 
