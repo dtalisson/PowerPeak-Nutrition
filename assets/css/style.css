@@ -341,7 +341,7 @@ button {
     font-size: 2.5rem; 
     color: black;
     font-family: "Oswald", sans-serif;
-
+                      
 }
 .cards-inf { 
     display: grid;
@@ -365,7 +365,7 @@ button {
 }
 
 .card-img img { 
-            width: 150px;
+            width: 130px;
             margin: 0rem -2rem;
 }
 .inf-card { 
@@ -510,9 +510,12 @@ button {
 .beneficios-bases { 
                     margin: 1.5rem 0rem;
 }
+.conteudo-bases { 
+    padding: 2rem 0rem;
+}
 
 .bases-direito { 
-                background-color: #151515f1;
+                background-color: #151515d4;
                 width: 50%;
                 padding: 8rem 5rem;
                 background-image: url(/assets/img/bg-base.jpg);

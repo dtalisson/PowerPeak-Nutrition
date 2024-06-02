@@ -168,7 +168,7 @@
         padding: 10rem 3rem;
 }   
     .bases-direito h1 { 
-                    font-size: 2.rem;
+                    font-size: 3rem;
     }
     .bases-direito p { 
                 font-size: 1rem;
@@ -185,78 +185,136 @@
 }
 
 @media screen and (max-width: 600px) {
+   
+   
     .about-powerpeak h2 { 
-    text-align: center;
-}
+                text-align: center;
+    }
+    .bases { 
+                margin: 40rem 0rem;
+    }
+    .bases-bg { 
+                flex-direction: column;
+    }
+    .bases-esquerdo { 
+                width: 100%;
+                padding: 3rem 6rem;
+    }
+    .bases-esquerdo h3 { 
+                font-size: 2.2rem;
+    }
+    .bases-esquerdo p { 
+        font-size: 1.1rem;
+    }
+    .bases-direito { 
+                width: 100%;
+    }
+    .bases-direito h1 { 
+        font-size: 2.5rem;
+    }
+    .bases-direito p { 
+                font-size: 1.1rem;
+    }
+    .bases-direito button { 
+                margin: 3rem 0rem;
+    }
 }
 
 /* MEDIA QUERY 600PX */
 @media screen and (max-width: 435px) { 
-.informacoes-principal  h1 { 
-    font-size: 1.8rem;
+        .informacoes-principal  h1 { 
+                                font-size: 1.8rem;
+        }
+        .informacoes-principal > h2 { 
+                                font-size: 3rem;
+        }
+        .inf-adicionais h2, .inf-adicionais p  { 
+                                font-size: 1rem;
+        }
+        .inf-adicionais { 
+                                width: 400px;
+                                margin: 0;
+        }
+        .inf-adicionais button { 
+                                width: 300px;
+                                gap: 5px;
+                                padding: 1rem 2rem;
+                                background-color: #bf3d2a;
+                                border: none;
+        }
+        .inf-adicionais button h2 { 
+                                font-size: 1.5rem;
+        }
+        .cards-inf { 
+                                width: 100%;
+                                margin: 0rem 0rem;
+        }
+        .cards { 
+                                width: 350px;
+        }
+        .box-menu { 
+                                width: 350px;
+        }
+        .box-menu .box-img img { 
+                                width: 120px;
+        }
+        .box-menu .box-inf span { 
+                                font-size: 1rem;
+        }
+        .card-img img { 
+                                width: 130px;
+        }
+        .inf-add i { 
+                                font-size: 1.3rem;
+                                padding: .7rem;
+                                margin: 6rem 1rem; 
+        }
+        .inf-add { 
+                                width: 20%;
+        }
+        .about-conteudo p { 
+                                font-size: 1.1rem;
+                                padding: 0rem 0rem;
+        }
+        .beneficios { 
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                width: 100%;
+                                margin: 1rem 0rem;
+        }
+        .beneficios li { 
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                                margin: 1rem 2rem;
+        }
+        .bases { 
+            margin: 68rem 0rem;
 }
-.informacoes-principal > h2 { 
-    font-size: 3rem;
-}
-.inf-adicionais h2, .inf-adicionais p  { 
-    font-size: 1rem;
-}
-.inf-adicionais { 
-    width: 400px;
-    margin: 0;
-}
-.inf-adicionais button { 
-    width: 300px;
-    gap: 5px;
-    padding: 1rem 2rem;
-    background-color: #bf3d2a;
-    border: none;
-}
-.inf-adicionais button h2 { 
-    font-size: 1.5rem;
-}
-.cards-inf { 
-    width: 100%;
-    margin: 0rem 0rem;
-}
-.cards { 
-    width: 350px;
-}
-.box-menu { 
-    width: 350px;
-}
-.box-menu .box-img img { 
-    width: 120px;
-}
-.box-menu .box-inf span { 
-    font-size: 1rem;
-}
-.card-img img { 
-    width: 130px;
-}
-.inf-add i { 
-    font-size: 1.3rem;
-    padding: .7rem;
-    margin: 6rem 1rem; 
-}
-.inf-add { 
-    width: 20%;
-}
-.about-conteudo p { 
-    font-size: 1.1rem;
-    padding: 0rem 0rem;
-}
-.beneficios { 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    margin: 1rem 0rem;
-}
-.beneficios li { 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 1rem 2rem;
-  } 
+        .bases-esquerdo { 
+                            width: 100%;
+                            padding: 3rem 6rem;
+        }
+        .bases-esquerdo h3 { 
+                            font-size: 1.5rem;
+        }
+        .bases-esquerdo p { 
+                            font-size: 1rem;
+        }
+        .bases-direito h1 { 
+                            font-size: 2rem;
+        }
+        .bases-direito { 
+                            width: 100%;
+        }
+        .bases-direito p { 
+                            font-size: 1rem;
+        }
+        .bases-direito button { 
+                            padding: 1rem 2rem;
+                            width: 200px;
+                            margin: 2rem 0rem;
+                            font-size: 1rem;
+        } 
 }
