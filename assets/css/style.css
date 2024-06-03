@@ -525,36 +525,100 @@ button {
                 background-blend-mode: overlay ;
 }
 .bases-direito h1 { 
-                    font-size: 4rem;
+                font-size: 4rem;
 }
 .bases-direito p { 
-                    font-size: 1.1rem;
-                    font-weight: 300;
-                    color: rgb(219, 219, 219);
+                font-size: 1.1rem;
+                font-weight: 300;
+                color: rgb(219, 219, 219);
 }
 .bases-direito button { 
-                        background-color: transparent;
-                        padding: 1rem 2rem;
-                        width: 300px;
-                        cursor: pointer;
-                        margin: 2rem 0rem;
-                        color: #bf3d2a;
-                        border: 3px solid rgb(255, 255, 255);
+                background-color: transparent;
+                padding: 1rem 2rem;
+                width: 300px;
+                cursor: pointer;
+                margin: 2rem 0rem;
+                color: #bf3d2a;
+                border: 3px solid rgb(255, 255, 255);
 }
 .bases-direito button:hover { 
-                        background: #ca2b12;
-                        transition: all .3s;
+                background: #ca2b12;
+                transition: all .3s;
 
 }
 
 
 .bases-direito button a { 
-                        font-weight: bold;
+                 font-weight: bold;
 
 }
 .bases-esquerdo h3, .bases-esquerdo p, .bases-direito h1, .bases-direito p { 
-                        font-family: "Oswald", sans-serif;
+                font-family: "Oswald", sans-serif;
 }
+.avaliacao {
+                max-width: 1280px;
+                margin: 0 auto;
+                padding: 2rem 0; 
+                background-color: #222222;
+                font-family: "Oswald", sans-serif;
 
-
+}
+.customers { 
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+}
+.customers h1 { 
+                font-size: 2.5rem;
+                margin: .5rem 0rem;
+}
+.cards-clientes { 
+                width: 100%;
+                padding: 5rem 0rem;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-around;
+    
+}
+.card-cliente { 
+                width: 350px;
+                padding: 0rem 0rem;
+}
+.card-cliente .top { 
+                display: flex;
+}
+.card-cliente .coments { 
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: center;
+                margin: 1rem 1rem;
+}
+.card-cliente img { 
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                margin: .5rem .5rem;
+}
+.card-cliente .top p:first-child { 
+                color: white;
+                font-size: 1.5rem;
+                font-weight: bold;
+}
+.card-cliente .top p { 
+                font-size: .8rem;
+                color: rgb(179, 179, 179);
+}
+.card-cliente .bottom { 
+                margin: 1rem .5rem;
+                width: 300px;
+                padding: 0rem .3rem;
+                text-align: justify;
+}
+.card-cliente .bottom p { 
+                font-size: .9em;
+                color: rgb(179, 179, 179);
+}
 
