@@ -29,8 +29,22 @@
     .beneficios li { 
         padding: 0.6rem 0rem;
       }
-
-    
+    .customers h1 { 
+        font-size: 2rem;
+        margin: 2rem 0rem;
+    }
+    .card-cliente { 
+        width: 300px;
+    }
+    .card-cliente img { 
+        width: 70px;
+        height: 80px;
+        border: 3px solid ;
+    }
+    .card-cliente .bottom p { 
+        font-size: .8em;
+        color: rgb(179, 179, 179);
+    }
 
 }
 /* MEDIA QUERY 1024PX */
@@ -63,7 +77,62 @@
     }
     .bases-direito p { 
                 font-size: 1rem;
-}
+    }
+    .cards-clientes { 
+        width: 100%;
+        padding: 10rem 0rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        gap: 130px;
+
+    }
+    .card-cliente { 
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        
+    }
+    .card-cliente .top { 
+            display: flex;
+    }
+    .card-cliente .coments { 
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: center;
+            margin: 1rem 1rem;
+    }
+    .card-cliente img { 
+            width: 200px;
+            height: 200px;      
+            border-radius: 50%;
+            border: 4px solid rgba(255, 255, 255, 0.823);
+            margin: .5rem 5rem 0 .5rem;
+    }
+    .card-cliente .top p:first-child { 
+            color: white;
+            font-size: 2rem;
+            font-weight: bold;
+    }
+    .card-cliente .top p { 
+            font-size: 1rem;
+            color: rgb(179, 179, 179);
+    }
+    .card-cliente .bottom { 
+            margin: 1rem .5rem;
+            width: 75%;
+            padding: 0rem .3rem;
+            
+    }
+    .card-cliente .bottom p { 
+            font-size: 1.5rem;
+            color: rgb(179, 179, 179);
+    }
+
 }
 /* MEDIA QUERY 900PX */
 
