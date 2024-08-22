@@ -559,7 +559,7 @@ button {
                 max-width: 1280px;
                 margin: 0 auto;
                 padding: 2rem 0; 
-                background-color: #000000ed;
+                background-color: #000000d5;
                 font-family: "Oswald", sans-serif;
                 background-image: url(/assets/img/bg-fundo-av.jpg);
                 background-repeat: no-repeat;
@@ -629,3 +629,40 @@ button {
                 color: rgb(179, 179, 179);
 }
 
+.inf-product { 
+    max-width: 1280px;
+    margin: 5rem auto;
+    padding: 2rem 0; 
+    background-color: #691818;
+    text-align: center;
+}
+.interface-inf { 
+    margin: 5rem 5rem ;
+}
+.inf-sobre { 
+    display: flex;
+    width: 80%;
+    margin: auto;
+    align-items: start;
+    justify-content: space-between;
+    gap: 10px ;
+    background-color: #222222;
+    padding: 1rem 5rem;
+    text-transform: uppercase;
+}
+.infs { 
+    display: flex;
+    flex-direction: column;
+}
+.infs p { 
+    font-size: .7rem;
+    margin: 2rem 0rem;
+}
+
+.inf-sobre h3{ 
+    font-size: 1.5;
+}
+.inf-sobre i { 
+    font-size: 2rem;
+    cursor: pointer;
+}

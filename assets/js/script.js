@@ -38,3 +38,15 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+
+let botaoClick = document.querySelector('.botaoClick');
+let conteudo1 = document.querySelector('.conteudo');
+
+botaoClick.addEventListener('click', function() { 
+    if(conteudo1.style.display === 'block') { 
+        conteudo1.style.display = 'none'
+    } else { 
+        conteudo1.style.display = 'block'
+    }
+})
