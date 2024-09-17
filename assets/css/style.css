@@ -559,7 +559,7 @@ button {
                 max-width: 1280px;
                 margin: 0 auto;
                 padding: 2rem 0; 
-                background-color: #000000d5;
+                background-color: #000000e7;
                 font-family: "Oswald", sans-serif;
                 background-image: url(/assets/img/bg-fundo-av.jpg);
                 background-repeat: no-repeat;
@@ -627,4 +627,38 @@ button {
 .card-cliente .bottom p { 
                 font-size: .9em;
                 color: rgb(179, 179, 179);
+}
+.footer { 
+    max-width: 100%;
+    background-color: #222222;
+    margin: 10rem 0rem 0 0;
+}
+.footer h1 { 
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 1rem 0rem 6rem 0rem;
+}
+.footer .direitos { 
+    display: flex;
+    width: 50%;
+    padding: .7rem;
+    margin: auto;
+    justify-content: space-between;
+    align-items: end;
+    border-top: 2px solid rgb(0, 0, 0);
+}
+.footer .direitos p { 
+    font-size: 1.2rem;
+    color: #bf3d2a;
+}
+.footer .direitos strong { 
+    color: #bf3d2a;
+}
+.footer ol { 
+    display: flex;
+    gap: 5px;
+}
+.footer i { 
+    font-size: 2rem;
+    color: #bf3d2a;
 }

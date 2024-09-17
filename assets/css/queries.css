@@ -45,6 +45,10 @@
         font-size: .8em;
         color: rgb(179, 179, 179);
     }
+    .footer .direitos {
+        width: 70%; 
+    }
+
 
 }
 /* MEDIA QUERY 1024PX */
@@ -248,7 +252,14 @@
         margin: 2rem 0rem;
         font-size:1.5rem;
 
-}
+    }
+    .footer h1 { 
+        font-size: 1.5rem;
+    }
+    .footer .direitos {
+        width: 90%; 
+    }
+
 
 
 }
@@ -377,7 +388,7 @@
         }
         .bases { 
             margin: 68rem 0rem;
-}
+        }
         .bases-esquerdo { 
                             width: 100%;
                             padding: 3rem 6rem;
@@ -431,5 +442,20 @@
             padding: 0rem 0rem;
             
     }
+    .footer h1 { 
+        font-size: 1rem;
+    }
+    .footer .direitos {
+        width: 90%; 
+        align-items: center;
+        
+    }
+    .footer .direitos p { 
+        font-size: .9rem;
+    }
+    .footer .direitos i {
+        font-size: 1rem;
+    }
+    
         
 }
