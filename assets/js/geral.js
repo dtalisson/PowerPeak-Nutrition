@@ -30,9 +30,7 @@ function sucessItem() {
          } else {
             alert(`
             Obrigado pela sua compra!
-            Valor do seu pedido: R$${totalAmount}
-            Nos contate no botão abaixo para confirmar seu item.
-            
+            Valor do seu pedido: R$${totalAmount}.
             `) 
             
          }

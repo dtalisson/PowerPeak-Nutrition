@@ -271,7 +271,7 @@
                 text-align: center;
     }
     .bases { 
-                margin: 40rem 0rem;
+                margin: 40rem 0rem 10rem 0;
     }
     .bases-bg { 
                 flex-direction: column;
@@ -387,7 +387,7 @@
                                 margin: 1rem 2rem;
         }
         .bases { 
-            margin: 68rem 0rem;
+            margin: 60rem 0rem 10rem 0;
         }
         .bases-esquerdo { 
                             width: 100%;
@@ -443,7 +443,8 @@
             
     }
     .footer h1 { 
-        font-size: 1rem;
+        font-size: .9rem;
+
     }
     .footer .direitos {
         width: 90%; 
